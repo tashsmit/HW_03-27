@@ -28,7 +28,7 @@ public class Person {
         return name;
     }
     public static Boolean checkSameCity(Person person1, Person person2) {
-        return person1.getCity().equals(person2.getCity());
+        return person1.getCity().equalsIgnoreCase(person2.getCity());
     }
     public void setName(String name) {
         this.name = name;
